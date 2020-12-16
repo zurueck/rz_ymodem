@@ -1,10 +1,14 @@
 #include <stdio.h>
-#include "po.h"
+#include "ymodem.h"
 
 int main(void) {
+    unsigned char buff[4097];
 
     printf("YMdebug %s -- 1:1\n", __FUNCTION__);
-    do_ymodem_rx();
+
+    Ymodem_Receive(buff);
+
+    Ymodem_Transmit(buff, "test", 3000);
 
     return 0; 
 }

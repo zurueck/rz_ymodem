@@ -24,8 +24,11 @@
   */ 
   
 /* Includes ------------------------------------------------------------------*/
-#include "common.h"
-#include "stm32f10x_flash.h"
+//#include "common.h"
+//#include "stm32f10x_flash.h"
+#include <string.h>
+#include "ymodem_llv_porting.h"
+#include "ymodem.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
